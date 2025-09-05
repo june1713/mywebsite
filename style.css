@@ -1,0 +1,144 @@
+/* Grundlayout für den gesamten Body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif; 
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;  /* Alle Texte standardmäßig zentriert */
+    background-image: url('img_background.jpg');
+  background-repeat: no-repeat;
+  background-size: 3% 20%;
+  background-position: 72% 40%;
+}
+
+header,
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+/* Titel */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h6{
+    font-family: "Kalnia Glaze";
+}
+
+/* Navigation */
+nav {
+  margin-top: 1rem;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: normal;
+}
+
+.nav a:hover {
+  text-decoration: line-through;
+    font-family: "Kalnia Glaze";
+
+}
+
+/* Links */
+
+a:link {
+  text-decoration: none ;
+  color: black ;
+}
+
+a:visited {
+  text-decoration: underline;
+  color: black;
+}
+
+a:hover {
+  text-decoration: line-through;
+  font-family: "Kalnia Glaze";
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+/* Aktuellen Menüpunkt in Pink hervorheben */
+.nav a.active {
+  font-family: "Kalnia Glaze";       /* Der aktuelle Menüpunkt wird in Pink */
+  font-weight: bold;  /* Optional: Hervorhebung durch fetten Text */
+}
+
+/* Sektionen */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Einfaches Layout für Projekte ohne Boxen */
+.project {
+  padding: 1rem;
+  text-align: left; /* Text innerhalb der Projektauflistungen linksbündig */
+  border-bottom: 0px solid #000; /* Schmaler Trenner zwischen den Projekten */
+  margin-bottom: 1rem;
+}
+
+.project h3 {
+  margin: 0.3rem 0;
+      font-family: "Kalnia Glaze";
+  font-weight: normal;
+}
+
+.project p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  border-top: 0px solid #000;
+}
+
+/* Responsives Verhalten */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+
+  a:link {
+  text-decoration: underline ;
+}
+
+  .nav {
+    gap: 0.7rem;
+    font-size: 0.95rem;
+  }
+}
+
+p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
