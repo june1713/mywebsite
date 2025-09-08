@@ -59,6 +59,37 @@ nav {
 
 }
 
+/* Aufklappbare Box */
+
+.accordion {
+  max-width: 600px;
+  margin: 0px;
+}
+
+.toggleButton {
+  width: 100%;
+  text-align: left;
+  padding: 10px 15px;
+  margin-top: 1px;
+  background-color: white;
+  border: 0px solid #ccc;
+  cursor: pointer;
+  font-size: 16px;
+    font-family: "Times New Roman", Times, serif; 
+}
+
+.boxContent {
+  padding: 10px 15px;
+  border: 0px solid #ccc;
+  border-top: none;
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+
 /* Links */
 
 a:link {
@@ -85,7 +116,6 @@ a:active {
   font-family: "Kalnia Glaze";       /* Der aktuelle Menüpunkt wird in Pink */
   font-weight: bold;  /* Optional: Hervorhebung durch fetten Text */
 }
-
 /* Sektionen */
 section {
   margin-bottom: 2rem;
